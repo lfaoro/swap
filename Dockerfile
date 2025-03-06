@@ -1,4 +1,4 @@
 FROM busybox
-WORKDIR /app
-COPY ./bin/troca_api /app/troca_api
-CMD ["/app/troca_api"]
+WORKDIR /srv
+COPY ./bin/swap_api /srv/swap_api
+CMD ["/srv/swap_api"]

@@ -6,7 +6,7 @@ We take the security of our project seriously. If you believe you have found a s
 
 **Please do NOT report security vulnerabilities through public GitHub issues.**
 
-Instead, please report them via email to [hack@tswap.app]. You should receive a response within 48 hours. If for some reason you do not, please follow up via email to ensure we received your original message.
+Instead, please report them via email to [hack@swapcli.com]. You should receive a response within 48 hours. If for some reason you do not, please follow up via email to ensure we received your original message.
 
 Please include the following information in your report:
 

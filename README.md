@@ -1,6 +1,6 @@
-# TSwap - The Crypto Swaps Terminal
+# SWAP - The Crypto Swap Terminal
 
-> TSwap helps you seamlessly swap between crypto pairs leveraging multiple Decentralized Exchanges.
+> Swap helps you swap crypto assets cross-chain leveraging multiple Decentralized Exchanges (DEX).
 
 ## Features
 
@@ -14,7 +14,7 @@
 
 ## Demo
 
-<a href="https://tswap.app/asset/demo.mp4">
+<a href="https://swapcli.com/asset/demo.mp4">
   <img src="asset/demo.gif" alt="Demo GIF" />
 </a>
 
@@ -25,44 +25,44 @@ _Click the image above to view the video_
 ### Bash one-liner
 
 ```bash
-curl -sSL https://get.tswap.app | bash
+curl -sSL https://get.swapcli.app | bash
 ```
 
 ### Go install
 
 ```bash
-go install github.com/lfaoro/tswap/cmd/tswap@latest
+go install github.com/lfaoro/swap/cmd/swap@latest
 ```
 
 ### MacOS (brew)
 
 ```bash
-brew install lfaoro/tap/tswap
+brew install lfaoro/tap/swap
 ```
 
 ### Nix (soon)
 
 ```bash
-nix-env -iA tswap
+nix-env -iA swap
 ```
 
 ## Storage
 
-- `~/.config/tswap/config`
+- `~/.config/swap/config`
 
 ## Remote Access
 
-- SSH: ```ssh tswap@ssh.tswap.app``` (WIP: coming soon)
+- SSH: ```ssh swap@ssh.swapcli.com``` (WIP: coming soon)
 
 ## Build it yourself
 
 > requires [Go](https://go.dev/doc/install)
 
 ```bash
-git clone https://github.com/lfaoro/tswap.git \
-&& cd tswap \
+git clone https://github.com/lfaoro/swap.git \
+&& cd swap \
 && make build \
-&& bin/tswap
+&& bin/swap
 ```
 
 ## Contributing
@@ -71,12 +71,12 @@ I love pull requests, don't hesitate.
 
 ## Support
 
-- [issues](https://github.com/lfaoro/tswap/issues)
-- [telegram](https://t.me/termswap)
+- [issues](https://github.com/lfaoro/swap/issues)
+- [telegram](https://t.me/swapcli)
 
-## Help TSwap grow
+## Help swap grow
 
-> With your help, we can make TSwap better.
+> With your help, we can make swap better.
 
 - Star the repo
 - Tell your friends
@@ -86,6 +86,7 @@ I love pull requests, don't hesitate.
 - [Sponsor](https://github.com/sponsors/lfaoro)
 
 ## Roadmap
+
 - release
 - implement secure address reuse feature via sha256/hmac
 - implement auto clipboard
@@ -94,7 +95,7 @@ I love pull requests, don't hesitate.
 
 ## Disclaimer
 
-We provide a service (hereinafter referred to as "the Platform") that facilitates the swapping of crypto tokens by integrating third-party services. Please be aware of the following:
+Swapcli.com provides a service (hereinafter referred to as "the Platform") that facilitates the swapping of crypto tokens by integrating third-party services. Please be aware of the following:
 
 - **No Ownership or Custody**: I do not own, hold in custody, or control any of the crypto tokens that are exchanged. All transactions occur directly between users through external services.
 
