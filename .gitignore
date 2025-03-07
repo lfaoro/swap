@@ -1,14 +1,17 @@
-cmd/apiserver/*
-cmd/troca_api/*
-cmd/troca_ssh/*
-cmd/test/*
+cmd/swap_api/
+cmd/swap_ssh/
+cmd/test/
+src/
+ext/
 
-gen/*
-bin/*
+gen/
+bin/
+data/
 
-*.log
+.log
 .tmp
 .env
 .wrangler
 .todo
 .vscode
+.ignore

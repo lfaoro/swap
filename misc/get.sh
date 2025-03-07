@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-only
+# 
 # Copyright (c) 2024 Leonardo Faoro. All rights reserved.
 # Use of this source code is governed by the AGPL-3.0 license
 # found in the LICENSE file.
@@ -22,7 +23,7 @@ error() {
 
 check_permissions() {
     local dir="$1"
-    TEMP_FILE=$(mktemp -t troca_install_XXXXXX) || error "Failed to create temp file"
+    TEMP_FILE=$(mktemp -t swap_install_XXXXXX) || error "Failed to create temp file"
     if ! mv "$TEMP_FILE" "$dir/" 2>/dev/null; then
         echo "Warning: No write permission in $dir"
         INSTALL_DIR="/tmp"
@@ -43,8 +44,8 @@ check_path() {
 }
 
 # Configuration
-APP_NAME=tswap
-REPO="lfaoro/tswap"
+APP_NAME=swap
+REPO="lfaoro/swap"
 LATEST_RELEASE_URL="https://github.com/${REPO}/releases/latest"
 DOWNLOAD_URL="https://github.com/${REPO}/releases/download"
 
