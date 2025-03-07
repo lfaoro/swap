@@ -1,6 +1,6 @@
 # SWAP - The Crypto Swap Terminal
 
-> Swap helps you swap crypto assets cross-chain leveraging multiple Decentralized Exchanges (DEX).
+> Swap helps you exchange crypto assets cross-chain leveraging multiple Decentralized Exchanges (DEX).
 
 ## Features
 
@@ -25,7 +25,7 @@ _Click the image above to view the video_
 ### Bash one-liner
 
 ```bash
-curl -sSL https://get.swapcli.app | bash
+curl -sSL https://get.swapcli.com | bash
 ```
 
 ### Go install
