@@ -79,8 +79,7 @@ case "${OS}" in
 esac
 
 # Get latest version
-VERSION=$(curl -sSL ${LATEST_RELEASE_URL} | grep -o "v[0-9]\+\.[0-9]\+\.[0-9]\+" | head -n1) || error "Failed to fetch latest version"
-[ -z "${VERSION}" ] && error "Failed to parse version number"
+VERSION=$(curl -sSL "https://api.github.com/repos/${REPO}/releases/latest" | grep -o '"tag_name": "v[^"]*"' | sed 's/"tag_name": "//;s/"//')
 
 # Create installation directory
 mkdir -p "${INSTALL_DIR}" || error "Failed to create installation directory"
@@ -91,11 +90,11 @@ DOWNLOAD_BINARY_URL="${DOWNLOAD_URL}/${VERSION}/${BINARY_NAME}"
 echo "Downloading ${APP_NAME} ${VERSION} for ${OS}/${ARCH}..."
 
 if [ "${OS}" = "windows" ]; then
-    curl -fsSL "${DOWNLOAD_BINARY_URL}" -o "${INSTALL_DIR}/${APP_NAME}.exe" || error "Download failed"
+    curl -fsSL "${DOWNLOAD_BINARY_URL}" -o "${INSTALL_DIR}/${APP_NAME}.exe" --progress-bar || error "Download failed"
     chmod +x "${INSTALL_DIR}/${APP_NAME}.exe" || error "Failed to set executable permissions"
     BINARY_PATH="${INSTALL_DIR}/${APP_NAME}.exe"
 else
-    curl -fsSL "${DOWNLOAD_BINARY_URL}" -o "${INSTALL_DIR}/${APP_NAME}" || error "Download failed"
+    curl -fsSL "${DOWNLOAD_BINARY_URL}" -o "${INSTALL_DIR}/${APP_NAME}" --progress-bar || error "Download failed"
     chmod +x "${INSTALL_DIR}/${APP_NAME}" || error "Failed to set executable permissions"
     BINARY_PATH="${INSTALL_DIR}/${APP_NAME}"
 fi
