@@ -1,0 +1,17 @@
+root = "."
+tmp_dir = ".tmp"
+
+[build]
+  bin = "troca --debug"
+  cmd = "go build -ldflags='-X main.APIURL=localhost:8080' ."
+  exclude_regex = ["_test.go"]
+  include_ext = ["go"]
+
+[color]
+  build = "yellow"
+  main = "magenta"
+  runner = "green"
+  watcher = "cyan"
+
+[log]
+  time = true

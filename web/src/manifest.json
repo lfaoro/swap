@@ -1,0 +1,24 @@
+{
+  "short_name": "swap",
+  "name": "Swap | The Crypto Swap CLI",
+  "description": "The Crypto Swap CLI",
+  "icons": [
+    {
+      "src": "assets/swap_400x400.png",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    },
+    {
+      "src": "assets/swap_192x192.png",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "shortcuts": [],
+  "screenshots": []
+}
