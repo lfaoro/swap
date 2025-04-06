@@ -1,4 +1,4 @@
-# SWAP | The Crypto Swap Terminal
+# Swap | the Crypto Swap Terminal
 
 > Exchange crypto assets cross-chain leveraging multiple exchanges.
 
@@ -6,10 +6,10 @@
 
 - multi-exchange support for best rates
 - cross-chain swaps
-- privacy-focused: your IP is not sent to exchanges
 - no account needed
+- privacy-focused: your IP is not sent to exchanges
 - simple navigation (esc go back / enter go forward)
-- securely save/load your wallets (sha256/hmac)
+- securely save/load your wallet address (sha256/hmac)
 - search dozens of assets
 - swap or pay (floating/fixed)
 - QR code support
@@ -28,8 +28,8 @@ _Click the image above to view the video_
 ## Installation
 
 > download from [Github Releases](https://github.com/lfaoro/swap/releases) \
-> OS: Linux, MacOS, Windows \
-> Arch: x86_64, arm64
+> OS [Linux, MacOS, Windows] \
+> Arch [x86_64, arm64]
 
 ### Bash one-liner
 
@@ -67,9 +67,9 @@ nix-env -iA swap
 
 ```bash
 git clone https://github.com/lfaoro/swap.git \
-&& cd swap \
-&& make build \
-&& bin/swap
+  && cd swap \
+  && make build \
+  && bin/swap
 ```
 
 ## Storage
@@ -81,33 +81,49 @@ git clone https://github.com/lfaoro/swap.git \
 
 ```bash
 ssh swap@ssh.swapcli.com #(WIP: coming soon)
-``` 
+```
 
 ## Contributing
 
 I love pull requests, don't hesitate.
 
+## Exchanges
+
+You want your exchange on Swapcli?
+Send me an [email](ex@swapcli.com) with your API docs.
+
+You want your exchange colorized in the ?ist?
+Submit a PR or donate and I will do it for you.
+
 ## Support
 
-- [GitHub issues](https://github.com/lfaoro/swap/issues)
 - [Telegram Chat](https://t.me/swapcli)
+- [GitHub issues](https://github.com/lfaoro/swap/issues)
 
 ## Help swap grow
 
 > With your help, we can make swap better.
 
 - **Star the repo**
-- Tell your friends
-- [FIAT Donation](https://checkout.revolut.com/pay/7c8fae59-f65b-44de-9875-39dc014dc817)
-- [Sponsor](https://github.com/sponsors/lfaoro)
-- XMR donation [**9XCyahmZiQgcVwjrSZTcJepPqCxZgMqwbABvzPKVpzC7gi8URDme8H6UThpCqX69y5i1aA81AKq57Wynjovy7g4K9MeY5c**]
-- BTC donation [**bc1qzaqeqwklaq86uz8h2lww87qwfpnyh9fveyh3hs**]
+- **Tell your friends**
+- XMR support [**9XCyahmZiQgcVwjrSZTcJepPqCxZgMqwbABvzPKVpzC7gi8URDme8H6UThpCqX69y5i1aA81AKq57Wynjovy7g4K9MeY5c**]
+- BTC support [**bc1qzaqeqwklaq86uz8h2lww87qwfpnyh9fveyh3hs**]
+- [GitHub sponsor](https://github.com/sponsors/lfaoro)
+- [FIAT support](https://checkout.revolut.com/pay/7c8fae59-f65b-44de-9875-39dc014dc817)
 
 ## Roadmap
 
 - [ ] implement auto clipboard
 - [ ] implement birdpay feature
 - [ ] create stylish themes
+- [ ] add more exchanges
+
+## How Swap works
+
+- two coins and an amount has to be provided, then `swap` sends a request to all exchanges we have integrated and asks for an offer
+- the ones that reply with an offer will be shown in the table sorted by `best offer`, their reputation rating (from A to E) and estimated time for completing the transaction
+- select the best exchange by your criteria, input a receiving address and `swap` will create a transaction
+- send the amount requested by the exchange and the converted amount is sent to your wallet
 
 ## Disclaimer
 
@@ -127,9 +143,9 @@ Swapcli.com provides a service (hereinafter referred to as "the Platform") that 
 
 - **Commission**: A commission is charged on each transaction facilitated through the Platform, solely for the use of the interface. This does not imply involvement in the actual transfer of tokens.
 
-- **Regulatory Changes**: The regulatory environment for cryptocurrencies is rapidly evolving, particularly with the implementation of the EU's MiCA regulation. I will attempt to adapt to these changes, but cannot guarantee uninterrupted service or that all aspects of the service will remain compliant under new regulations.
+- **Regulatory Changes**: The regulatory environment for cryptocurrencies is rapidly evolving, particularly with the implementation of the EU MiCA regulation. I will attempt to adapt to these changes, but cannot guarantee uninterrupted service or that all aspects of the service will remain compliant under new regulations.
 
-- **Indemnification**: By using this Platform, you agree to indemnify, defend, and hold harmless Leonardo Faoro from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising from your use of the services or your violation of this disclaimer.
+- **Indemnification**: By using this Platform, you agree to indemnify, defend, and hold harmless all developers of this project from and against any claims, liabilities, damages, losses, and expenses, including legal fees, arising from your use of the services or your violation of this disclaimer.
 
 - **Use at Your Own Risk**: All users engage with the Platform at their own risk.
 
