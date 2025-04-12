@@ -90,14 +90,14 @@ I love pull requests, don't hesitate.
 ## Exchanges
 
 You want your exchange on Swapcli?
-Send me an [email](ex@swapcli.com) with your API docs.
+Send me an [email](exch@swapcli.com) with your API docs.
 
-You want your exchange colorized in the ?ist?
+You want your exchange colorized in the list \
 Submit a PR or donate and I will do it for you.
 
 ## Support
 
-- [Telegram Chat](https://t.me/swapcli)
+- [Telegram chat](https://t.me/swapcli)
 - [GitHub issues](https://github.com/lfaoro/swap/issues)
 
 ## Help swap grow
